@@ -1,0 +1,12 @@
+body {
+    font-family: sans-serif;
+    background: #f5f5f5;
+    padding: 2rem;
+    text-align: center;
+  }
+  
+  #match-info {
+    font-size: 1.5rem;
+    color: #333;
+  }
+  
