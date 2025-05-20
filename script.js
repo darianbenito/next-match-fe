@@ -8,14 +8,17 @@ fetch(url)
     const dateTime = new Date(data.dateTime);
     const atHome = data.atHome;
 
-    const localDate = dateTime.toLocaleString();
-    const match = atHome
-      ? `Independiente vs ${opponent}`
-      : `${opponent} vs Independiente`;
+    const localDate = dateTime.toLocaleDateString();
+    const hours = String(dateTime.getHours()).padStart(2, '0');
+    const minutes = String(dateTime.getMinutes()).padStart(2, '0');
+    const formattedTime = `${hours}:${minutes} hs.`;
+    
+    const location = atHome ? 'Local' : 'Visitante';
+    const matchInfo = `${opponent} — ${localDate} ${formattedTime} (${location})`;
 
-    document.getElementById('match-info').innerText = `${match} — ${localDate}`;
+    document.getElementById('match-info').innerText = matchInfo;
   })
   .catch(error => {
-    document.getElementById('match-info').innerText = 'Error loading match info';
+    document.getElementById('match-info').innerText = 'Error cargando la información';
     console.error('Fetch error:', error);
   });
