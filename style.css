@@ -2,7 +2,7 @@ body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   margin: 0;
   padding: 0;
-  background: linear-gradient(to bottom right, #b71c1c, #880000);
+  background: linear-gradient(to bottom right, #e30613, #880000);
   color: #fff;
   height: 100vh;
   display: flex;
@@ -12,6 +12,12 @@ body {
 
 .container {
   text-align: center;
+}
+
+.logo {
+  width: 80px;
+  height: auto;
+  margin-bottom: 1rem;
 }
 
 h1 {
@@ -26,9 +32,9 @@ h1 {
 
 .match-card {
   background-color: #fff;
-  color: #b71c1c;
+  color: #e30613;
   padding: 1rem 2rem;
-  border: 2px solid #b71c1c;
+  border: 2px solid #e30613;
   box-shadow: 0 0 6px rgba(0, 0, 0, 0.1);
   font-size: 1.4rem;
   font-weight: 500;
