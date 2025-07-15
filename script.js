@@ -1,5 +1,5 @@
 const teamId = '75ced64b-1d3b-4d06-b927-16304eb1de10';
-const url = `https://next-match-1-0-1.onrender.com/next-match?teamId=${teamId}`;
+const url = `https://next-match-be-1-0-2.onrender.com/next-match?teamId=${teamId}`;
 
 async function loadMatchInfo() {
   const matchInfoElement = document.getElementById('match-info');
