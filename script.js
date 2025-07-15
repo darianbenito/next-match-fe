@@ -14,7 +14,7 @@ async function loadMatchInfo() {
     }
 
     const data = await response.json();
-    const opponent = data.OpponentTeamName;
+    const opponent = data.opponentTeamName;
     const dateTime = new Date(data.dateTime);
     const atHome = data.atHome;
 
